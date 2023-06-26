@@ -8,21 +8,22 @@
 
 ### --- Production Order Master ---
 OrderID: ID (PK) <br>
-Order Description: CHAR255 <br>
+OrderDescription: CHAR255 <br>
 ProductID: String <br>
-Product Description: CHAR255 <br>
+ProductDescription: CHAR255 <br>
+OrderQty: Number <br>
 
 5. Push in the following data via migration scripts:
-PRD001;'Order for computer table/type01';CT01;'Computer table type 01 <br>
-PRD002;'Order for computer table/type02';CT02;'Computer table type 02 <br>
-PRD003;'Order for computer table/type03';CT03;'Computer table type 03 <br>
-PRD004;'Order for computer table/type04';CT04;'Computer table type 04 <br>
-PRD005;'Order for computer table/type05';CT05;'Computer table type 05 <br>
-PRD006;'Order for computer table/type06';CT06;'Computer table type 06 <br>
-PRD007;'Order for computer table/type07';CT07;'Computer table type 07 <br>
-PRD008;'Order for computer table/type08';CT08;'Computer table type 08 <br>
-PRD009;'Order for computer table/type09';CT09;'Computer table type 09 <br>
-PRD010;'Order for computer table/type10';CT10;'Computer table type 10 <br>
+PRD001;'Order for computer table/type01';CT01;'Computer table type 01';5 <br>
+PRD002;'Order for computer table/type02';CT02;'Computer table type 02';5 <br>
+PRD003;'Order for computer table/type03';CT03;'Computer table type 03';5 <br>
+PRD004;'Order for computer table/type04';CT04;'Computer table type 04';5 <br>
+PRD005;'Order for computer table/type05';CT05;'Computer table type 05';5 <br>
+PRD006;'Order for computer table/type06';CT06;'Computer table type 06';5 <br>
+PRD007;'Order for computer table/type07';CT07;'Computer table type 07';5 <br>
+PRD008;'Order for computer table/type08';CT08;'Computer table type 08';5 <br>
+PRD009;'Order for computer table/type09';CT09;'Computer table type 09';5 <br>
+PRD010;'Order for computer table/type10';CT10;'Computer table type 10';5 <br>
 
 6. Introduce a new column 'Plant' as additional not-null PK via versioned migration scripts
 
@@ -32,6 +33,7 @@ Plant: String (PK) <br>
 Order Description: CHAR255 <br>
 ProductID: String <br>
 Product Description: CHAR255 <br>
+OrderQty: Number <br>
 
 7. Take care of the Data migration. New data to look like this.
 PRD001;PLNT01;'Order for computer table/type01';CT01;'Computer table type 01 <br>
