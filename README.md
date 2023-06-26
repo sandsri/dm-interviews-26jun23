@@ -2,7 +2,7 @@
 
 ## ----- (~ 1hr 30 mins) ----- 
 1. A working API application (JAVA/SpringBoot, NodeJS or any other) that can do basic CRUD
-2. Additionally it shall have a mass update end-point
+2. Additionally the CRUD shall have capability of single & mass updates (i.e. single create/ mass create, single read/ mass read, single update/ mass update, single delete/ mass delete)
 3. Connect to a local SQLite DB (strictly SQLite only)
 4. DB model (to be generated via versioned migration scripts) - you may use Flyway or Liquibase:
 
