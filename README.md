@@ -7,11 +7,11 @@
 4. DB model (to be generated via versioned migration scripts) - you may use Flyway or Liquibase:
 
 ### --- Production Order Master ---
-OrderID: ID (PK) <br>
-OrderDescription: CHAR255 <br>
-ProductID: String <br>
-ProductDescription: CHAR255 <br>
-OrderQty: Number <br>
+* OrderID: ID (PK) <br>
+* OrderDescription: CHAR255 <br>
+* ProductID: String <br>
+* ProductDescription: CHAR255 <br>
+* OrderQty: Number <br>
 
 5. Push in the following data via migration scripts: <br>
 PRD001;'Order for computer table/type01';CT01;'Computer table type 01';5 <br>
@@ -28,12 +28,12 @@ PRD010;'Order for computer table/type10';CT10;'Computer table type 10';5 <br>
 6. Introduce a new column 'Plant' as additional not-null PK via versioned migration scripts
 
 ### --- Production Order Master ---
-OrderID: ID (PK) <br>
-Plant: String (PK) <br>
-Order Description: CHAR255 <br>
-ProductID: String <br>
-Product Description: CHAR255 <br>
-OrderQty: Number <br>
+* OrderID: ID (PK) <br>
+* Plant: String (PK) <br>
+* Order Description: CHAR255 <br>
+* ProductID: String <br>
+* Product Description: CHAR255 <br>
+* OrderQty: Number <br>
 
 7. Take care of the Data migration. New data to look like this. <br>
 PRD001;PLNT01;'Order for computer table/type01';CT01;'Computer table type 01';5 <br>
