@@ -15,7 +15,7 @@
 
 5. Push in the following data via migration scripts: <br>
 
-|OrderID: ID (PK) |OrderDescription: CHAR255 |ProductID: String|ProductDescription: CHAR255 |OrderQty: Number|
+|OrderID: ID (PK) |OrderDescription |ProductID|ProductDescription |OrderQty|
 |-----------------|-----------------|-----------------|-----------------|-----------------|
 |PRD001|'Order for computer table/type01'|CT01|'Computer table type 01'|5|
 |PRD002|'Order for computer table/type02'|CT02|'Computer table type 02'|5|
@@ -39,7 +39,7 @@
 
 7. Take care of the Data migration. New data to look like this. <br>
 
-|OrderID: ID (PK) |Plant (PK) | OrderDescription: CHAR255 |ProductID: String|ProductDescription: CHAR255 |OrderQty: Number|
+|OrderID: ID (PK) |Plant (PK) | OrderDescription |ProductID|ProductDescription |OrderQty|
 |-----------------|-----------------|-----------------|-----------------|-----------------|-----------------|
 |PRD001|PLNT01|'Order for computer table/type01'|CT01|'Computer table type 01'|5|
 |PRD002|PLNT01|'Order for computer table/type02'|CT02|'Computer table type 02'|5|
