@@ -13,7 +13,7 @@ ProductID: String <br>
 ProductDescription: CHAR255 <br>
 OrderQty: Number <br>
 
-5. Push in the following data via migration scripts:
+5. Push in the following data via migration scripts: <br>
 PRD001;'Order for computer table/type01';CT01;'Computer table type 01';5 <br>
 PRD002;'Order for computer table/type02';CT02;'Computer table type 02';5 <br>
 PRD003;'Order for computer table/type03';CT03;'Computer table type 03';5 <br>
@@ -35,7 +35,7 @@ ProductID: String <br>
 Product Description: CHAR255 <br>
 OrderQty: Number <br>
 
-7. Take care of the Data migration. New data to look like this.
+7. Take care of the Data migration. New data to look like this. <br>
 PRD001;PLNT01;'Order for computer table/type01';CT01;'Computer table type 01';5 <br>
 PRD002;PLNT01;'Order for computer table/type02';CT02;'Computer table type 02';5 <br>
 PRD003;PLNT01;'Order for computer table/type03';CT03;'Computer table type 03';5 <br>
